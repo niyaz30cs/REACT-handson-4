@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom"
 function Student() {
   return (
     <div>
@@ -8,6 +8,7 @@ function Student() {
         <button>Add new student</button>
       </div>
       <table className='table' border={(2)} cellSpacing={(0)}>
+        <thead>
       <tr>
           <th>Name</th>
           <th>Age</th>
@@ -15,55 +16,58 @@ function Student() {
           <th>Batch</th>
           <th>Change</th>
         </tr>
+        </thead>
+        <tbody className='tbody'>
         <tr>
           <td>John</td>
           <td>26</td>
           <td>MERN</td>
           <td>October</td>
-          <td></td>
+          <td><Link>Edit</Link></td>
         </tr>
         <tr>
           <td>Doe</td>
           <td>25</td>
           <td>MERN</td>
           <td>November</td>
-          <td></td>
+          <td><Link>Edit</Link></td>
         </tr>
         <tr>
           <td>Biden</td>
           <td>26</td>
           <td>MERN</td>
           <td>September</td>
-          <td></td>
+          <td><Link>Edit</Link></td>
         </tr>
         <tr>
           <td>Barar</td>
           <td>22</td>
           <td>MERN</td>
           <td>September</td>
-          <td></td>
+          <td><Link>Edit</Link></td>
         </tr>
         <tr>
           <td>Christ</td>
           <td>23</td>
           <td>MERN</td>
           <td>October</td>
-          <td></td>
+          <td><Link>Edit</Link></td>
         </tr>
         <tr>
           <td>Elent</td>
           <td>24</td>
           <td>MERN</td>
           <td>November</td>
-          <td></td>
+          <td><Link>Edit</Link></td>
         </tr>
         <tr>
           <td>Harshita Sharma</td>
           <td>24</td>
           <td>MERN</td>
           <td>October</td>
-          <td></td>
+          <td><Link>Edit</Link></td>
         </tr>
+        </tbody>
       </table>
     </div>
   )
